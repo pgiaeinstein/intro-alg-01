@@ -1,14 +1,17 @@
-import math
+valores = [55, 92, 425, 86, 10, 64, 89, 177]
 
-var_1 = 33
-var_2 = 22
-var_3 = 84
+# Resolução do problema
 
-soma = var_1 + var_2 + var_3
+def soma_valores_impar(lista_valores):
+    soma = 0
 
-lista = [2, 5, 6, 8, 33, 45, 123, 999]
+    for item in valores:
+        if item % 2 != 0:
+            soma += item
+            
+    # prtin(soma)
+    return soma
 
-lista_2 = list()
+soma_valores_impar(valores)
 
-for item in lista:
-    lista_2.append(item)
+# print(resultado)
